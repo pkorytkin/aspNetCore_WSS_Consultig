@@ -1,0 +1,26 @@
+GET http://localhost:5168/companys
+
+###
+GET http://localhost:5168/departments/1
+
+###
+GET http://localhost:5168/companys/1
+
+###
+POST http://localhost:5168/companys
+Content-Type: application/json
+
+{
+    "Name": "Test 2",
+    "Departments": 
+    [
+        {
+            "Name":"Depo",
+            "Groups":[
+                {
+                "Name":"Group 1"
+                }
+                ]
+        }
+    ]
+}
